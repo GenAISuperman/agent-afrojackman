@@ -11,7 +11,7 @@ providers:
     config:
       apiHost: "oai-shop-poc.openai.azure.com"
       deployment: gpt-4o
-      apiKey: "${AZURE_OPENAI_KEY}"
+      apiKey: "env:AZURE_OPENAI_KEY"
 
 tests:
   - description: "Agent responds helpfully to basic input"
