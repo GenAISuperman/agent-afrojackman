@@ -9,7 +9,7 @@ prompts:
 providers:
   - id: azure:chat:gpt-4o
     config:
-      apiHost: "https://oai-shop-poc.openai.azure.com/"
+      apiHost: "oai-shop-poc.openai.azure.com"
       deployment: gpt-4o
       apiKey: "${AZURE_OPENAI_KEY}"
 
