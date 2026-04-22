@@ -9,9 +9,9 @@ prompts:
 providers:
   - id: azure:chat:gpt-4o
     config:
-      apiHost: "oai-shop-poc.openai.azure.com"
+      apiHost: "https://oai-shop-poc.openai.azure.com/openai"
       deployment: gpt-4o
-      apiKey: "env:AZURE_OPENAI_KEY"
+      apiKey: "${AZURE_OPENAI_KEY}"
 
 tests:
   - description: "Agent responds helpfully to basic input"
