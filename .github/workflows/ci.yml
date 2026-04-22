@@ -43,7 +43,9 @@ jobs:
         run: |
           npx promptfoo@latest eval \
             --config evals/promptfooconfig.yaml \
-            --ci
+            --no-cache \
+            --output evals/results.json
+
         env:
           AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
           AZURE_OPENAI_KEY: ${{ secrets.AZURE_OPENAI_KEY }}
