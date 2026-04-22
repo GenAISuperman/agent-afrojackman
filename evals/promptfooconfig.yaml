@@ -7,10 +7,11 @@ prompts:
       User: {{user_input}}
 
 providers:
-  - id: azureopenai:gpt-4o
+  - id: azure:chat:gpt-4o
     config:
       apiHost: "https://oai-shop-poc.openai.azure.com/"
       deployment: gpt-4o
+      apiKey: "${AZURE_OPENAI_KEY}"
 
 tests:
   - description: "Agent responds helpfully to basic input"
@@ -48,4 +49,4 @@ tests:
 
 defaultTest:
   options:
-    provider: azureopenai:gpt-4o
+    provider: azure:chat:gpt-4o
